@@ -1,13 +1,15 @@
-let num=11;
+function checkPrime(number){
 let count=0;
-for(let i=2;i<=num;i++){
-	if(num%i==1){
+for(let i=1;i<=number;i++){
+	if(number%i==0){
 	count++;
 	}
 }
-if(count==1){
-console.log("Prime")
+if(count==2){
+return "Prime";
 }
 else{
-console.log("Not Prime")
+return "Not Prime";
 }
+}
+console.log(checkPrime(12));
